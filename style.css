@@ -4,7 +4,7 @@
   padding: 0px;
 }
 body{
-  background-color: black;  
+  background-color: hsl(0, 0%, 10%);  
   color: white; 
   font-family: 'Montserrat', serif;
 }
