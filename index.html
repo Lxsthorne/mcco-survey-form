@@ -1,143 +1,148 @@
 <!DOCTYPE html>
-<html>
-<head>
-   <meta charset="UTF-8">
-   <meta name="author" content="lxsthorne">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="style.css"  type="text/css">
-   <title>Middlesex County Community Orchestra | Survey</title>
-   </head>
+<html lang="en">
+  <head>
+     <meta charset="UTF-8">
+     <meta name="author" content="lxsthorne">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="C:\Users\Alexis\Documents\ATOM.js\MCCO Survey\mcco-survey-form-master\style.css"  type="text/css">
+     <script type ="text/javascript" src="C:\Users\Alexis\Documents\ATOM.js\MCCO Survey\mcco-survey-form-master\mcco.js"></script>
+     <title>Middlesex County Community Orchestra | Survey</title>
+  </head>
 
-<header>
-   <p>Middlesex County Community Orchestra</p>
-</header>
-  
-<main id="main">
-  <h1 id="title">MCCO Musician Survey</h1>
-  <p id="description"> 
-    Thank you for your interest in the MCCO! Even if there are no current openings, <em>we will keep your information on file </em>and contact you for future consideration. 
-  </p>
-<form id="survey-form">
-  <fieldset>
-    <legend>
-      <h3>Please complete this survey if you would like to be considered for our upcoming season!</h3>
-    </legend>
-    <ol>
-      <li>
-        <label for="name" id="name-label">* Name:</label>
-        <input type="text" id="name" class= "textbox" placeholder="Jane Doe" required>       
-      </li>
-      
-      <li>
-        <label for="email" id="email-label">* Email:</label>
-        <input type="email" id="email" class="textbox" placeholder="jane@example.com" required>        
-      </li>
+  <header>
+     <div><p>Middlesex County Community Orchestra</p></div>
+  </header>
+  <main id="main">
+    <form id="survey-form">
+      <div>
+        <h1 id="title">MCCO Musician Survey</h1>
+        <p id="description">
+          Thank you for your interest in the MCCO! Even if there are no current openings, <em>we will keep your information on file </em>and contact you for future consideration.
+        </p>
+      </div>
+    <fieldset>
+      <legend>
+        <h3>Please complete this survey if you would like to be considered for our upcoming season!</h3>
+      </legend>
+      <ol>
+        <li>
+          <label for="name" id="name-label">1. * Name:</label>
+          <input type="text" id="name" onchange="c()" class= "textbox" placeholder="Jane Doe" required>
+        </li>
 
-      <li>
-        <label for="phone-contact">Phone:</label>        
-        <input type="phone" class="textbox" id="phone-contact" placeholder="555-555-5555">        
-      </li>
+        <li>
+          <label for="email" id="email-label">2. * Email:</label>
+          <input type="email" id="email" onchange="c()" class="textbox" placeholder="jane@example.com" required>
+        </li>
 
-      <li>
-        <Label for="town">* Select your town of residence:</label>
-        <select id="dropdown" type="dropdown"  class= "textbox" required>
-          <option default value>Select an option</option>        
-          <option value="chester">Chester</option>
-          <option value="clinton">Clinton</option>
-          <option value="cromwell">Cromwell</option>
-          <option value="deep-river">Deep River</option>
-          <option value="durham">Durham</option>
-          <option value="east-haddam">East Haddam</option>
-          <option value="east-hampton">East Hampton</option>
-          <option value="essex">Essex</option>
-          <option value="haddam">Haddam</option>
-          <option value="killingworth">Killingworth</option>
-          <option value="middlefield">Middlefield</option>
-          <option value="middletown">Middletown</option>
-          <option value="old-saybrook">Old Saybrook</option>
-          <option value="portland">Portland</option>
-          <option value="westbrook">Westbrook</option>
-        </select>        
-      </li>
-      
-      <li>
-        <label for="education">* What is your highest level of education:</label>        
-      </li>
-      
-      <ul>
         <li>
-          <input id="radio" name="education" type="radio" value="education" required>
-          <label for="current-student">Current student</label>          
+          <label for="phone-contact">3. Phone:</label>
+          <input type="phone" class="textbox" id="phone-contact" placeholder="555-555-5555">
         </li>
-        
-        <li>
-          <input id="radio" name="education" type="radio" value="education" required>
-          <label for="diploma">High School Diploma</label>          
-        </li>
-        
-        <li>
-          <input id="radio" name="education" type="radio" value="education" required>
-          <label for="bachelors">Bachelors</label>          
-        </li>
-        
-        <li>
-          <input id="radio" name="education" type="radio" value="education" required>
-          <label for="masters">Masters</label>          
-        </li>
-        
-        <li>
-          <input id="radio" name="education" type="radio" value="education" required>
-          <label for="other">Other</label>
-          <input type="text" id="details" class= "textbox" placeholder="i.e., certificate">          
-        </li>
-      </ul>
 
-      <li>
-        <label for="instrument">* What is your primary instrument?</label>
-        <input type="text" required>        
-      </li>
-
-      <li>
-        <label for="inst-study" id="number-label">For how many years have you studied/played this instrument?</label>
-        <input type="number" name="inst-study" class= "textbox" id="number" min="1" max="60" placeholder="1">
-      </li>
-
-      <li>
-        <label for="other-inst">Please list any additional instruments on which you are proficient:</label>
-        <input type="text" class= "textbox" name="other-inst">        
-      </li>
- 
-      <li>
-        <label for="marketing">How did you find out about our auditions:</label>        
-      </li>
-      
-      <ul>
         <li>
-          <input type="checkbox" id="checkbox" value="email">
-          <label for="email">Email</label></li>
-        <li>
-          <input type="checkbox" id="checkbox" value="friend">
-          <label for="friend">Friend/Family</label></li>
-        <li>
-          <input type="checkbox" id="checkbox" value="musician">
-          <label for="musician">MCCO Musician</label></li>
-        <li>
-          <input type="checkbox" id="checkbox" value="mailing">
-          <label for="mailing">Mailing</label></li>
-        <li>
-          <input type="checkbox" id="checkbox" value="social-media">
-          <label for="social-media">Social Media (MCCO Facebook, Twitter, Instagram)</label></li>
-      </ul>
-      
-      <li>
-        <label for="additional" id="additional">Please tell us anything you would like to add for further consideration:<br></label>
-        <textarea style="width:300px; height:50px" placeholder="Please add any other information here."></textarea>
+          <Label for="town">4. * Select your town of residence:</label>
+          <select id="dropdown" type="dropdown"  class="textbox" required>
+            <option default value>Select an option</option>
+            <option value="chester">Chester</option>
+            <option value="clinton">Clinton</option>
+            <option value="cromwell">Cromwell</option>
+            <option value="deep-river">Deep River</option>
+            <option value="durham">Durham</option>
+            <option value="east-haddam">East Haddam</option>
+            <option value="east-hampton">East Hampton</option>
+            <option value="essex">Essex</option>
+            <option value="haddam">Haddam</option>
+            <option value="killingworth">Killingworth</option>
+            <option value="middlefield">Middlefield</option>
+            <option value="middletown">Middletown</option>
+            <option value="old-saybrook">Old Saybrook</option>
+            <option value="portland">Portland</option>
+            <option value="westbrook">Westbrook</option>
+          </select>
         </li>
-    </ol>
-  </fieldset>
-   <button type="submit" id="submit">Submit</button>
+
+        <li>
+          <label for="education">5. * What is your highest level of education:</label>
+        </li>
+
+        <ul>
+          <li>
+            <input id="radio" name="education" type="radio" value="education" required>
+            <label for="current-student">Current student</label>
+          </li>
+
+          <li>
+            <input id="radio" name="education" type="radio" value="education" required>
+            <label for="diploma">High School Diploma</label>
+          </li>
+
+          <li>
+            <input id="radio" name="education" type="radio" value="education" required>
+            <label for="bachelors">Bachelors</label>
+          </li>
+
+          <li>
+            <input id="radio" name="education" type="radio" value="education" required>
+            <label for="masters">Masters</label>
+          </li>
+
+          <li>
+            <input id="radio" name="education" type="radio" value="education" required>
+            <label for="other">Other</label>
+            <input type="text" id="details" class= "textbox" placeholder="i.e., certificate">
+          </li>
+        </ul>
+
+        <li>
+          <label for="instrument">6. * What is your primary instrument?</label>
+          <input type="text" onchange="c()" class="textbox" required>
+        </li>
+
+        <li>
+          <label for="inst-study" id="number-label">7. For how many years have you studied/played this instrument?</label>
+          <input type="number" name="inst-study" class= "textbox" id="number" min="1" max="60" placeholder="1">
+        </li>
+
+        <li>
+          <label for="other-inst">8. Please list any additional instruments on which you are proficient:</label>
+          <input type="text" onchange="c()" class="textbox" name="other-inst">
+        </li>
+
+        <li>
+          <label for="marketing">9. How did you find out about our auditions:</label>
+        </li>
+
+        <ul>
+          <li>
+            <input type="checkbox" id="checkbox" value="email">
+            <label for="email">Email</label></li>
+          <li>
+            <input type="checkbox" id="checkbox" value="friend">
+            <label for="friend">Friend/Family</label></li>
+          <li>
+            <input type="checkbox" id="checkbox" value="musician">
+            <label for="musician">MCCO Musician</label></li>
+          <li>
+            <input type="checkbox" id="checkbox" value="mailing">
+            <label for="mailing">Mailing</label></li>
+          <li>
+            <input type="checkbox" id="checkbox" value="social-media">
+            <label for="social-media">Social Media (MCCO Facebook, Twitter, Instagram)</label></li>
+        </ul>
+
+        <li>
+          <label for="additional" id="additional">10. Please tell us anything you would like to add for further consideration:<br></label>
+          <textarea style="width: 300px; height:100px;" placeholder="Please add any other information here."></textarea>
+        </li>
+      </ol>
+    </fieldset>
+     <button type="submit" id="submit">Submit</button>
   </form>
-     </main>
-<footer>Middlesex County Community Orchestra &copy; 2018</footer>
-    </div>
+  </main>
+  <footer>Middlesex County Community Orchestra &copy; 2018</footer>
+
+  <script>
+
+  </script>
 </html>
